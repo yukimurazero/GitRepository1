@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.abc.LoadActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- 起别名 -->
+
+                <action android:name="load_lloyd" />
+                <!-- 默认cate -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 自定义cate -->
+
+                <category android:name="cate_lloyd" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.abc.LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+
+                <!-- 起别名 -->
+
+                <action android:name="login_lloyd" />
+                <!-- 默认cate -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.abc.LoadingActivity"
+            android:label="@string/title_activity_loading" >
+            <intent-filter>
+
+                <!-- 起别名 -->
+
+                <action android:name="loading_lloyd" />
+                <!-- 默认cate -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.abc.SettingActivity"
+            android:label="@string/title_activity_setting" >
+            <intent-filter>
+
+                <!-- 起别名 -->
+
+                <action android:name="setting_lloyd" />
+                <!-- 默认cate -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.abc.PlayActivity"
+            android:label="@string/title_activity_play" >
+            <intent-filter>
+
+                <!-- 起别名 -->
+
+                <action android:name="play_lloyd" />
+                <!-- 默认cate -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
